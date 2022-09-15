@@ -1,0 +1,13 @@
+.coolElement {
+    background-color:green;
+    color:blue;
+}
+
+p{
+    color:green;
+    background-color: beige;
+}
+
+img {
+    display: block;
+}

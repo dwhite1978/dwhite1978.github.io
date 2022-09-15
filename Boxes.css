@@ -1,0 +1,15 @@
+div {
+    display: inline-block;
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    color: white;
+    text-align: center; /* Centered the text within the line*/
+    line-height: 100px;
+    text-shadow: 2px 2px black;
+}
+
+* {
+    outline: 1px solid black;
+}

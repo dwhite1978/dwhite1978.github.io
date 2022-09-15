@@ -1,0 +1,44 @@
+div {
+    background-color: blanchedalmond;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    font-size: 30px;
+    text-align: center;
+    color:darkred;
+    font-weight: bold;
+    position: absolute;
+}
+
+body {
+    position: relative;
+    height: 200vh;
+    margin: 0;
+}
+
+#top-right {
+    top: 0px;
+    right: 0px;
+}
+
+#bottom-left {
+    bottom: 0px;
+    left: 0px;
+}
+
+#bottom-right {
+    bottom: 0px;
+    right: 0px;
+}
+
+#center {
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    background-color: blue;
+
+    top: 50%;
+    left: 50%;
+    
+    margin: -50px 0 0 -150px;
+}
