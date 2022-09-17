@@ -6,33 +6,73 @@
     </head>
     <body>
         <header>
-            <h1>Website of Pie</h1>
+            <h1>Java Practice Projects</h1>
         </header>
         <nav>
             <a href="FlexBox.html">Go to Flex Boxes</a>
             <a href="About.html">About</a>
+            <h5>Page Navigation</h5>
+            <a class="PageNav" href="#TextChange">Basic text change</a>
+            <a class="PageNav" href="#Clock">Clock</a>
+            <a class="PageNav" href="#RandomStory">Random Story Generator</a>
         </nav>
         <main>
             <div class="card-container">
-                <div class="card">
-                    <h3><i>Chocolate Pudding Pie</i></h3>
-                    <p>
-                        <img src="SurfingDog.jfif" alt="Surfing Dog" />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quisque non tellus orci ac auctor augue mauris. Egestas quis ipsum suspendisse ultrices gravida. Pellentesque nec nam aliquam sem. Tellus pellentesque eu tincidunt tortor aliquam. Cursus sit amet dictum sit amet justo donec enim. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia. Nec ultrices dui sapien eget mi proin sed. Mi ipsum faucibus vitae aliquet nec ullamcorper sit amet. Fringilla urna porttitor rhoncus dolor purus non enim praesent. Nam libero justo laoreet sit amet cursus. Turpis cursus in hac habitasse platea dictumst quisque. Mauris a diam maecenas sed enim ut sem viverra. Augue interdum velit euismod in pellentesque massa.
-                    </p>
+                <div id="TextChange" class="card">
+                    <h3>Linked Java Script File to Change Text</h3>
+
+                    <p class="jpStartLine" id="name">Bob</p>
+
+                    <p class="jp" >went to the store.</p>
+                    <br /><br />
+                    <div class="button-container">
+                        <button style="display: block" type="button" onclick="ListName()">Click</button>
+                    </div>
+
+                    <p>When clicked the button will change the name in the sentence to "Dan".  This uses a java script refrenced function</p>
+
+                    <script src="myScript.js"></script>
                 </div>
-                <div class="card">
-                    <h3><i>French Silk Pie</i></h3>
+                <div id="Clock" class="card">
+                    <h3>Clock Using a Java Script Function</h3>
+                    
+                    <p id="clock"></p>
+
+                    <p>This card uses the following concepts:</p>
+
                     <ul>
-                        <li>Delicious</li>
-                        <li>Rich</li>
-                        <li>Classic</li>
+                        <li>Time functions</li>
+                        <li>Creating simple number and string variables</li>
+                        <li>Starting and updating a java script when the page loads</li>
+                        <li>If conditions to change variables</li>
                     </ul>
-                    <p>Tellus orci ac auctor augue mauris augue neque gravida. Nibh venenatis cras sed felis eget. Non blandit massa enim nec dui nunc mattis enim ut. Tincidunt praesent semper feugiat nibh. Aenean vel elit scelerisque mauris pellentesque. A arcu cursus vitae congue mauris rhoncus. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Sed risus pretium quam vulputate dignissim suspendisse in. Elementum tempus egestas sed sed risus pretium quam vulputate dignissim. Enim facilisis gravida neque convallis a cras semper. Est ultricies integer quis auctor elit sed vulputate mi. Elementum eu facilisis sed odio morbi quis commodo.</p>
+
+                    <script>currentTime();</script>
+
                 </div>
-                <div class="card">
-                    <h3><i>Chess Pie</i></h3>
-                    <p>Tellus orci ac auctor augue mauris augue neque gravida. Nibh venenatis cras sed felis eget. Non blandit massa enim nec dui nunc mattis enim ut. Tincidunt praesent semper feugiat nibh. Aenean vel elit scelerisque mauris pellentesque. A arcu cursus vitae congue mauris rhoncus. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Sed risus pretium quam vulputate dignissim suspendisse in. Elementum tempus egestas sed sed risus pretium quam vulputate dignissim. Enim facilisis gravida neque convallis a cras semper. Est ultricies integer quis auctor elit sed vulputate mi. Elementum eu facilisis sed odio morbi quis commodo.</p>
+                <div id="RandomStory" class="card">
+
+                    <h3>Random Story Using Java Script</h3>
+
+                    <p class="jpStartLine" id="nameRandom">Fred</p>
+                    <p class="jp">is</p>
+                    <p class="jp" id="ageRandom">10</p>
+                    <p class="jp">years old. He is a</p>
+                    <p class="jp" id="ageCategory">child.</p>
+                    <br /><br />
+
+                    <div class="button-container">
+                        <button style="display: block" type="button" onClick="RandomInfo()">Click Me!</button>
+                    </div>
+
+                    <p>This updates a random age, name, and classifies the age when the button is clicked.  It uses the following concepts:</p>
+
+                    <ul>
+                        <li>Random number generator to caclulate age</li>
+                        <li>String array variable to assign the name</li>
+                        <li>Select case (switch) to create the age category</li>
+                    </ul>
+
                 </div>
             </div>
         </main>
